@@ -1,0 +1,27 @@
+@use 'variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-family: variables.$text-typography;
+    font-size: variables.$body-copy;
+    font-weight: variables.$text-light;
+
+    height: 100vh;
+
+    color: variables.$very-dark-grayish-blue;
+    @include variables.bg-gradient;
+
+}

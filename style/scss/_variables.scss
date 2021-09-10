@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*Colors*/
+
+/*PRIMARY:*/
+/*Background Gradient*/
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+/*Text*/
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+/*NEUTRAL*/
+/*Text*/
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+/*Dividers*/
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+$white: #fff;
+
+
+/*Typography*/
+$text-typography: 'Kumbh Sans', sans-serif;
+$body-copy: 12px;
+$text-light: 400;
+$text-bold: 700;
+
+
+/*Background Gradient*/
+@mixin bg-gradient {
+    background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+/*FAQ ITEM hover states*/
+@mixin hover-state ($on-hover) {
+    color: $on-hover;
+}

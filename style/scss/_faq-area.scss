@@ -1,0 +1,82 @@
+@use 'variables';
+
+.faq-area {
+    font-size: 1.2em;
+    padding: 5.5em 4em 4em 0;
+
+    .faq-title {
+        margin: 0 0 1.5em 0;
+        font-size: 1.8em;
+        color: variables.$very-dark-desaturated-blue;
+    }
+
+    .faq-list {
+        margin-top: 1.5em;
+        height: 262.917px;
+
+        .faq-item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            margin: 1em 0;
+            border-bottom: 1px solid variables.$light-grayish-blue;
+            cursor: pointer;
+
+                .question {
+                    display: block;
+                    flex-basis: 95%;
+                    flex-grow: 1;
+                    font-weight: 400;
+                    transition: .25s;
+                    &:hover {
+                        @include variables.hover-state(variables.$soft-red);
+                    }
+                }
+                .question__clicked {
+                    font-weight: 700;
+                    color: variables.$very-dark-desaturated-blue;
+                }
+    
+                    .arrow-icon {
+                        pointer-events: none;
+                        align-self: center;
+                        display: block;
+                        
+                        transform: rotate(0);
+                        transform-origin: 50% 50%;
+                        transition: all .2s;
+                    }
+                    .rotate {
+                        transform: rotate(180deg);
+                        transition: all .5s;
+                    }
+            }
+            
+            .answer {
+                height: 0;
+                font-size: .9em;
+                font-weight: variables.$text-light;
+                padding-right: 3.5em;
+                padding-bottom: 1em;
+                margin-top: 0;
+                transform: scaleY(0);
+                opacity: 0;
+                color: variables.$dark-grayish-blue;
+                line-clamp: 2;
+                transition: opacity .2s ease-in-out;
+            }
+            .answer__active {
+                height: auto;
+                opacity: 1;
+                margin-top: .5em;
+                transform: scaleY(1);
+                transition: opacity .5s ease-in-out;
+
+            }
+        
+    }
+}
+

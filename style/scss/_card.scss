@@ -1,0 +1,21 @@
+@use 'variables';
+
+.card {
+    background-color: variables.$white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    max-width: 80%;
+    min-height: 80%;
+
+    border-radius: 25px;
+
+    .card__item {
+        flex-basis: 50%;
+        position: relative;
+    }
+}

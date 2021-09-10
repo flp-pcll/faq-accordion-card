@@ -1,0 +1,12 @@
+@use 'variables';
+
+.attribution {
+    font-size: variables.$text-typography;
+    font-weight: variables.$text-bold;
+    text-align: center;
+
+    & .attribution__link{
+        color: variables.$light-grayish-blue;
+    }
+}
+

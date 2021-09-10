@@ -1,0 +1,13 @@
+@use 'variables';
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    // @include variables.bg-gradient;
+}
