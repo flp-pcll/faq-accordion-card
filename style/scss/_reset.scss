@@ -19,9 +19,6 @@ html {
     font-size: variables.$body-copy;
     font-weight: variables.$text-light;
 
-    height: 100vh;
-
     color: variables.$very-dark-grayish-blue;
-    @include variables.bg-gradient;
 
 }

@@ -1,42 +1,21 @@
-@use 'variables';
-
 @media screen and (max-width: 1000px) {
-    html{
-        height: auto;
-        
-    }
     .card {
         flex-direction: column;
-        // margin: 40em 0 0 0;
-        width: 100%;
-        min-height: 70vh;
-        position: relative;
-        top: 10%;
+        margin: 15em 0;
+        margin-bottom: 2em;
 
         .hero-img-area {
-            width: 80%;
-            flex-basis: 50%;
-            height: 100%;
-            margin-bottom: 0;
-            // margin: 0 0 10em 0;
-            background-image: url(../images/bg-pattern-mobile.svg);
-            background-position: top;
-            background-size: 220px 90px;
-            background-repeat: no-repeat;
+            max-height: 50px;
             position: relative;
             .hero-img-area__woman {
-                background-image: none;
-
-                .hero-img-area__mobile {
-                    display: block;
-                    position: absolute;
-                    bottom: 30%;
-                    top: 0;
-                    left: 50%;
-                    transform: translate(-55%, -55%);
-                    // width: 100%;
-                    // height: 100%;
-                }
+                background: none;
+            }
+            .hero-img-area__mobile {
+                display: block;
+                position: absolute;
+                top: -110px;
+                left: -150px;
+                bottom: 0;
             }
             .box {
                 display: none;
@@ -44,19 +23,26 @@
         }
 
         .faq-area {
+            min-height: 400px;
             padding: 2em;
-            padding-top: 0;
+            margin-top: 2em;
             .faq-title {
+                vertical-align: middle;
                 text-align: center;
-                margin-bottom: 0;
             }
+        }
+    }
+}
 
-            .faq-list {
-                .faq-item {
-                    .answer {
-                        padding-right: 0;
-                    }
-                }
+@media screen and (max-width: 475px) {
+    .card {
+        max-width: 95%;
+        padding: 0;
+
+        .faq-area {
+            // padding: 0;
+            .answer {
+                padding-right: 0;
             }
         }
     }
