@@ -1,49 +1,67 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1165px) {
     .card {
         flex-direction: column;
-        margin: 15em 0;
-        margin-bottom: 2em;
+        max-width: 50%;
+        margin: 10em auto 5em auto;
 
         .hero-img-area {
-            max-height: 50px;
-            position: relative;
+            background: url(../../images/bg-pattern-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 90%;
+
             .hero-img-area__woman {
+                height: 150px;
                 background: none;
+
+                .hero-img-area__mobile {
+                    display: block;
+                    position: relative;
+                    bottom: 100px;
+                    right: 15px;
+                }
             }
-            .hero-img-area__mobile {
-                display: block;
-                position: absolute;
-                top: -110px;
-                left: -150px;
-                bottom: 0;
-            }
+
             .box {
                 display: none;
             }
         }
 
         .faq-area {
-            min-height: 400px;
-            padding: 2em;
-            margin-top: 2em;
+            flex-grow: 1;
+            padding: 0;
+            padding: 0 2em 4em 2em;
+
             .faq-title {
-                vertical-align: middle;
                 text-align: center;
             }
+            .answer {
+                padding-right: 0;
+            }
+
         }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .card {
+        max-width: 80%;
     }
 }
 
 @media screen and (max-width: 475px) {
     .card {
-        max-width: 95%;
-        padding: 0;
+        max-width: 100%;
+        margin: 10em 1em 1em 1em;
+    }
+    
+}
 
+@media screen and (max-width: 321px) {
+    .card {
         .faq-area {
-            // padding: 0;
-            .answer {
-                padding-right: 0;
-            }
+            padding: 0 .5em 4em .5em;
         }
     }
+    
 }

@@ -1,16 +1,17 @@
 @use 'variables';
 
 .page-wrapper {
+    @include variables.bg-gradient;
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-
-    min-height: 100vh;
-
-    @include variables.bg-gradient;
-
-
-    // @include variables.bg-gradient;
 }
+
+// @media screen and (max-width: 1000px) {
+//     .card {
+//         flex-direction: column;
+//         width: 95%;
+//     }
+// }

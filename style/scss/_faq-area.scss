@@ -31,9 +31,6 @@
                     flex-grow: 1;
                     font-weight: 400;
                     transition: .25s;
-                    &:hover {
-                        @include variables.hover-state(variables.$soft-red);
-                    }
                 }
                 .question__clicked {
                     font-weight: 700;
@@ -65,7 +62,6 @@
                 transform: scaleY(0);
                 opacity: 0;
                 color: variables.$dark-grayish-blue;
-                line-clamp: 2;
                 transition: opacity .2s ease-in-out;
             }
             .answer__active {
@@ -77,6 +73,16 @@
 
             }
         
+    }
+}
+
+
+//Created a media query for hover so it does not affect the style in inputs that dont support hover;
+@media (hover:hover) {
+    .faq-item:hover {
+        .question {
+            @include variables.hover-state(variables.$soft-red);
+        }
     }
 }
 
