@@ -157,7 +157,7 @@ html {
     margin: 10em auto 5em auto;
   }
   .card .hero-img-area {
-    background: url(../../images/bg-pattern-mobile.svg);
+    background: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 90%;
